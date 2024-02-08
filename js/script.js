@@ -14,7 +14,7 @@ AOS.init({
   offset: 100,
 });
 
-const trendingSushis = [
+const trendingSushi = [
   "Make Sushi",
   "Nigiri Sushi",
   "Oshizushi",
@@ -43,7 +43,7 @@ const cards = [
   {
     imgSrc: sushi11,
     alt: "sushi-11",
-    title: "Originale Sushi",
+    title: "Original Sushi",
     rating: "4.8",
     price: "$21.00",
     active: true,
@@ -51,7 +51,7 @@ const cards = [
   {
     imgSrc: sushi10,
     alt: "sushi-10",
-    title: "Ramen Legendo",
+    title: "Ramen Legend",
     rating: "4.8",
     price: "$21.00",
   },
