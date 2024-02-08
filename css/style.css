@@ -48,6 +48,10 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
 button {
   outline: none;
   border: none;
@@ -329,6 +333,10 @@ input {
 
   .trending__content {
     padding: 32px;
+  }
+
+  .footer {
+    justify-content: center;
   }
 }
 /* END: trending media queries */
