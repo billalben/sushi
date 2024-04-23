@@ -63,6 +63,15 @@ input {
   outline: none;
 }
 
+.overlay.active {
+  position: fixed;
+  z-index: 6;
+  background-color: hsla(0, 0%, 0%, 0.404);
+  width: 100%;
+  height: 100vh;
+  inset: 0;
+}
+
 .flex-center,
 .flex-between {
   display: flex;
@@ -189,7 +198,28 @@ input {
   }
 
   .header__menu {
-    display: none;
+    position: fixed;
+    background: white;
+
+    max-width: 250px;
+    height: 100vh;
+    width: 100%;
+    right: 0;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 7;
+
+    padding-block-start: 100px;
+
+    transform: translateX(250px);
+    transition: transform 200ms ease-in-out;
+  }
+
+  .header__menu.active {
+    transform: translateX(0);
   }
 
   .header__menu-mobile {
@@ -293,6 +323,12 @@ input {
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 10px 20px;
     border-radius: 30px;
+
+    transition: border-color 250ms ease-in-out;
+  }
+  
+  .subscription__form input:focus {
+    border: 1px solid rgba(255, 255, 255, 0.8);
   }
 
   .subscription__form button {

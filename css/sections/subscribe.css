@@ -48,7 +48,7 @@
 }
 
 .subscription__form:focus-within {
-  border-color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.8);
 }
 
 .subscription__form input {
@@ -59,7 +59,7 @@
   font-family: var(--plus-jakarta-sans);
 
   color: #fff;
-  opacity: 0.5;
+  opacity: 0.8;
 
   background: transparent;
  
